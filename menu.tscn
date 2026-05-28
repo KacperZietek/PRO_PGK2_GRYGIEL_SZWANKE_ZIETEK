@@ -1,0 +1,179 @@
+[gd_scene format=3 uid="uid://ba2t4k6eghp4f"]
+
+[ext_resource type="Script" uid="uid://c2303l6cectjj" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://c20k1n2en1r86" path="res://menu.png" id="2_4hy44"]
+[ext_resource type="AudioStream" uid="uid://df8r8qbkl6bc" path="res://Sounds/click.wav" id="2_ouk20"]
+[ext_resource type="AudioStream" uid="uid://bnnupqmrfgbjq" path="res://Sounds/menu.mp3" id="3_mae5d"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lti8b"]
+font_color = Color(6.147, 0, 0, 1)
+
+[node name="Menu" type="Control" unique_id=451298686]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lti8b")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=994424172]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4hy44")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1147395413]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -27.5
+offset_right = 34.0
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="NicknameInput" type="LineEdit" parent="VBoxContainer" unique_id=1544314750]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Enter name..."
+alignment = 1
+
+[node name="HostButton" type="Button" parent="VBoxContainer" unique_id=104847261]
+layout_mode = 2
+text = "CREATE GAME"
+
+[node name="IPAddress" type="LineEdit" parent="VBoxContainer" unique_id=1408348565]
+layout_mode = 2
+text = "127.0.0.1"
+alignment = 1
+
+[node name="JoinButton" type="Button" parent="VBoxContainer" unique_id=855912260]
+layout_mode = 2
+text = "JOIN GAME"
+
+[node name="MusicButton" type="Button" parent="VBoxContainer" unique_id=1283913272]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MUSIC OFF
+"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=1313717661]
+layout_mode = 2
+text = "EXIT GAME"
+
+[node name="Label" type="Label" parent="." unique_id=1197580658]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 30.0
+offset_bottom = 53.0
+grow_horizontal = 2
+label_settings = SubResource("LabelSettings_lti8b")
+horizontal_alignment = 1
+
+[node name="HostPopup" type="ColorRect" parent="." unique_id=1235250621]
+visible = false
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.43137255)
+
+[node name="Panel" type="Panel" parent="HostPopup" unique_id=232724324]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpinBox" type="SpinBox" parent="HostPopup/Panel" unique_id=1128706835]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.25
+offset_top = -15.5
+offset_right = 43.25
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+min_value = 1.0
+value = 5.0
+alignment = 1
+
+[node name="Label" type="Label" parent="HostPopup/Panel" unique_id=1640339100]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -1.0
+offset_top = 30.0
+offset_right = -1.0
+offset_bottom = 53.0
+grow_horizontal = 2
+text = "Kills to win:"
+horizontal_alignment = 1
+
+[node name="StartGameButton" type="Button" parent="HostPopup/Panel" unique_id=1855294513]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.7
+anchor_right = 0.43333334
+anchor_bottom = 0.855
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0, 0.9490196, 0.9490196, 1)
+theme_override_colors/icon_normal_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+text = "START"
+metadata/_edit_use_anchors_ = true
+
+[node name="CancelButton" type="Button" parent="HostPopup/Panel" unique_id=1769212887]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 180.0
+offset_top = 140.0
+offset_right = 250.0
+offset_bottom = 171.0
+theme_override_colors/font_hover_color = Color(0.9490196, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+text = "CANCEL
+"
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=581786107]
+stream = ExtResource("2_ouk20")
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="." unique_id=1666634484]
+stream = ExtResource("3_mae5d")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/JoinButton" to="." method="_on_join_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/MusicButton" to="." method="_on_music_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="HostPopup/Panel/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="HostPopup/Panel/CancelButton" to="." method="_on_cancel_button_pressed"]

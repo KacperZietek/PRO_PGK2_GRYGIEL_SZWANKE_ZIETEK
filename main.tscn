@@ -1,0 +1,771 @@
+[gd_scene format=3 uid="uid://dw7e46u7h0ecn"]
+
+[ext_resource type="Script" uid="uid://b4fyiirhweyau" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dmw8cd35bvaas" path="res://Assets/Models/Buildings/Models/GLB format/building-type-q.glb" id="2_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://rg6bh11qphis" path="res://pause_menu.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cv7xi05ywpwgn" path="res://Assets/Models/Buildings/Models/GLB format/building-type-t.glb" id="4_vivmo"]
+[ext_resource type="PackedScene" uid="uid://t7gpat6h2hwe" path="res://Assets/Models/Buildings/Models/GLB format/building-type-g.glb" id="6_yaehf"]
+[ext_resource type="PackedScene" uid="uid://c4qomi3p6mr2d" path="res://Assets/Models/Buildings/Models/GLB format/building-type-m.glb" id="9_82xsv"]
+[ext_resource type="PackedScene" uid="uid://dcm7bb2ig18at" path="res://Assets/Models/Buildings/Models/GLB format/building-type-n.glb" id="10_getpj"]
+[ext_resource type="PackedScene" uid="uid://csckdk8ba1ud8" path="res://Assets/Models/Buildings/Models/GLB format/building-type-o.glb" id="11_ryguw"]
+[ext_resource type="PackedScene" uid="uid://dspf1pkd2k5ij" path="res://Assets/Models/Buildings/Models/GLB format/building-type-p.glb" id="12_d13ii"]
+[ext_resource type="PackedScene" uid="uid://0b453qyvi24b" path="res://Assets/Models/Roads/Models/GLB format/road-straight-half.glb" id="14_seu75"]
+[ext_resource type="PackedScene" uid="uid://drxe13whbhhut" path="res://Assets/Models/Roads/Models/GLB format/road-straight.glb" id="15_htxhm"]
+[ext_resource type="PackedScene" uid="uid://cqev0wogawrq2" path="res://Assets/Models/Roads/Models/GLB format/road-side-exit.glb" id="16_jq2sk"]
+[ext_resource type="PackedScene" uid="uid://bn1xucdpsc6ac" path="res://Assets/Models/Roads/Models/GLB format/road-side.glb" id="17_4k2k6"]
+[ext_resource type="PackedScene" uid="uid://bi3qnvleslxhw" path="res://Assets/Models/Roads/Models/GLB format/road-side-entry.glb" id="18_0rl1p"]
+[ext_resource type="PackedScene" uid="uid://bjvipyr5bheqd" path="res://Assets/Models/Roads/Models/GLB format/road-roundabout.glb" id="19_ok6jj"]
+[ext_resource type="PackedScene" uid="uid://dkalr7k87f2g7" path="res://Assets/Models/Roads/Models/GLB format/road-intersection.glb" id="20_facbu"]
+[ext_resource type="PackedScene" uid="uid://n8ptkwtkn6n6" path="res://Assets/Models/Roads/Models/GLB format/road-end.glb" id="21_b1qrp"]
+[ext_resource type="PackedScene" uid="uid://bkv1nvhoce8mc" path="res://Assets/Models/Roads/Models/GLB format/road-crossing.glb" id="25_0cp0l"]
+[ext_resource type="PackedScene" uid="uid://ck024dd8gdecf" path="res://Assets/Models/Roads/Models/GLB format/sign-highway-wide.glb" id="25_h8e4i"]
+[ext_resource type="PackedScene" uid="uid://bfvpylkttma3e" path="res://Assets/Models/Cars/Models/GLB format/sedan-sports.glb" id="26_4lmeg"]
+[ext_resource type="PackedScene" uid="uid://c6su8iao0xri8" path="res://Assets/Models/Roads/Models/GLB format/road-bend-square.glb" id="26_d2t1y"]
+[ext_resource type="PackedScene" uid="uid://coybtvpjom1vn" path="res://Assets/Models/Cars/Models/GLB format/ambulance.glb" id="27_0cp0l"]
+[ext_resource type="PackedScene" uid="uid://jm530u6dg7hv" path="res://Assets/Models/Buildings/Models/GLB format/fence-1x2.glb" id="28_0n3wm"]
+[ext_resource type="PackedScene" uid="uid://dj5qgubabtuxn" path="res://Assets/Models/Cars/Models/GLB format/firetruck.glb" id="28_d2t1y"]
+[ext_resource type="PackedScene" uid="uid://c1t7wildx67bc" path="res://Assets/Models/Cars/Models/GLB format/police.glb" id="29_gngh3"]
+[ext_resource type="PackedScene" uid="uid://636ipl3r2fvn" path="res://Assets/Models/Buildings/Models/GLB format/tree-large.glb" id="29_qnost"]
+[ext_resource type="PackedScene" uid="uid://dwdydqrchnvw3" path="res://Assets/Models/Cars/Models/GLB format/taxi.glb" id="30_0n3wm"]
+[ext_resource type="PackedScene" uid="uid://hdpury7u2r1" path="res://Assets/Models/Buildings/Models/GLB format/planter.glb" id="30_wnkbs"]
+[ext_resource type="PackedScene" uid="uid://bev4370rlnfs7" path="res://Assets/Models/Buildings/Models/GLB format/building-type-s.glb" id="31_f6a44"]
+[ext_resource type="PackedScene" uid="uid://cfxopd6qss5s3" path="res://Assets/Models/Cars/Models/GLB format/van.glb" id="31_qnost"]
+[ext_resource type="PackedScene" uid="uid://dehlbuxnv8evh" path="res://Assets/Models/Cars/Models/GLB format/cone.glb" id="32_jq2sk"]
+[ext_resource type="PackedScene" uid="uid://bqr0hbgogj7bn" path="res://Assets/Models/Cars/Models/GLB format/delivery.glb" id="32_wnkbs"]
+[ext_resource type="PackedScene" uid="uid://g73jjjkj8qac" path="res://Assets/Models/Cars/Models/GLB format/tractor.glb" id="33_4k2k6"]
+[ext_resource type="PackedScene" uid="uid://dxk2k7dm402ax" path="res://Assets/Models/Cars/Models/GLB format/suv-luxury.glb" id="33_f6a44"]
+[ext_resource type="PackedScene" uid="uid://ciknto838mvyv" path="res://Assets/Models/Buildings/Models/GLB format/tree-small.glb" id="34_0cbny"]
+[ext_resource type="PackedScene" uid="uid://crwr74jc8nj0f" path="res://Assets/Models/Cars/Models/GLB format/box.glb" id="34_4k2k6"]
+[ext_resource type="PackedScene" uid="uid://ck1l4mj05xr18" path="res://Assets/Models/Cars/Models/GLB format/delivery-flat.glb" id="35_hrvbo"]
+[ext_resource type="PackedScene" uid="uid://dc01w0rtqbd1" path="res://Assets/Models/Cars/Models/GLB format/sedan.glb" id="36_uypp3"]
+[ext_resource type="PackedScene" uid="uid://c64d7wi15hp0j" path="res://Assets/Models/Cars/Models/GLB format/garbage-truck.glb" id="37_blkrb"]
+[ext_resource type="PackedScene" uid="uid://bvyfb1xisrmbk" path="res://Assets/Models/Roads/Models/GLB format/construction-light.glb" id="40_0cp0l"]
+[ext_resource type="PackedScene" uid="uid://ii7d2mepy31b" path="res://Assets/Models/Roads/Models/GLB format/construction-barrier.glb" id="40_abqjc"]
+[ext_resource type="PackedScene" uid="uid://ifppcilhgfmi" path="res://Assets/Models/Roads/Models/GLB format/road-end-round.glb" id="41_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://nbuxxgil6s31" path="res://Assets/Sky/kloofendal_48d_partly_cloudy_puresky_2k.exr" id="43_d2t1y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gngh3"]
+albedo_color = Color(0.24104936, 0.24104936, 0.24104936, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cp0l"]
+transparency = 1
+albedo_color = Color(1.4954206, 1.4954206, 1.4954206, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2t1y"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gngh3"]
+panorama = ExtResource("43_d2t1y")
+
+[sub_resource type="Sky" id="Sky_0n3wm"]
+sky_material = SubResource("PanoramaSkyMaterial_gngh3")
+
+[sub_resource type="Environment" id="Environment_qnost"]
+background_mode = 2
+sky = SubResource("Sky_0n3wm")
+
+[node name="Main" type="Node3D" unique_id=999847488]
+script = ExtResource("1_h2yge")
+
+[node name="Map" type="Node3D" parent="." unique_id=1874854223]
+metadata/_edit_lock_ = true
+
+[node name="Floor" type="CSGBox3D" parent="Map" unique_id=502901621]
+use_collision = true
+size = Vector3(50, 1, 50)
+material = SubResource("StandardMaterial3D_gngh3")
+metadata/_edit_lock_ = true
+
+[node name="building-type-t2" parent="Map" unique_id=761773253 instance=ExtResource("4_vivmo")]
+transform = Transform3D(-8, 0, -6.993822e-07, 0, 8, 0, 6.993822e-07, 0, -8, 6.4455876, 0.6255889, -18.140676)
+metadata/_edit_lock_ = true
+
+[node name="building-type-g2" parent="Map" unique_id=930085114 instance=ExtResource("6_yaehf")]
+transform = Transform3D(-3.496911e-07, 0, 8, 0, 8, 0, -8, 0, -3.496911e-07, 17.078577, 0.49999905, -2.6410208)
+metadata/_edit_lock_ = true
+
+[node name="building-type-g3" parent="Map" unique_id=17283395 instance=ExtResource("6_yaehf")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 1.5067787, 0.4999981, -0.22609997)
+metadata/_edit_lock_ = true
+
+[node name="building-type-m2" parent="Map" unique_id=1611745152 instance=ExtResource("9_82xsv")]
+transform = Transform3D(-8, 0, 6.993822e-07, 0, 8, 0, -6.993822e-07, 0, -8, -18.742744, 0.4999981, -15.015057)
+metadata/_edit_lock_ = true
+
+[node name="building-type-n2" parent="Map" unique_id=303128148 instance=ExtResource("10_getpj")]
+transform = Transform3D(-8, 0, -6.993822e-07, 0, 8, 0, 6.993822e-07, 0, -8, -5.8831716, 0.5, -19.207615)
+metadata/_edit_lock_ = true
+
+[node name="building-type-o2" parent="Map" unique_id=1718927878 instance=ExtResource("11_ryguw")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 17.57116, 0.5, 18.668436)
+metadata/_edit_lock_ = true
+
+[node name="building-type-p2" parent="Map" unique_id=908354804 instance=ExtResource("12_d13ii")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -10.381615, 0.55671024, -0.9766607)
+metadata/_edit_lock_ = true
+
+[node name="road-straight-half2" parent="Map" unique_id=749841901 instance=ExtResource("14_seu75")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -23.934021, 0.5, 10.881882)
+metadata/_edit_lock_ = true
+
+[node name="road-straight5" parent="Map" unique_id=766573735 instance=ExtResource("15_htxhm")]
+transform = Transform3D(4.5, 0, 0, 0, 4, 0, 0, 0, 4, -22.184937, 0.5000038, -7.102561)
+metadata/_edit_lock_ = true
+
+[node name="road-straight4" parent="Map" unique_id=1880932698 instance=ExtResource("15_htxhm")]
+transform = Transform3D(-1.3113416e-07, 0, 4, 0, 4, 0, -3, 0, -1.7484555e-07, -17.96679, 0.5000038, 22.36502)
+metadata/_edit_lock_ = true
+
+[node name="road-straight3" parent="Map" unique_id=1017007369 instance=ExtResource("15_htxhm")]
+transform = Transform3D(-4.371139e-07, 0, 4, 0, 4, 0, -10, 0, -1.7484555e-07, -17.962687, 0.5, -0.10721455)
+metadata/_edit_lock_ = true
+
+[node name="road-straight6" parent="Map" unique_id=94038332 instance=ExtResource("15_htxhm")]
+transform = Transform3D(-3.496911e-07, 0, 4, 0, 4, 0, -8, 0, -1.7484555e-07, 10.003086, 0.4978974, -1.1332114)
+metadata/_edit_lock_ = true
+
+[node name="road-side-exit2" parent="Map" unique_id=1391322827 instance=ExtResource("16_jq2sk")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -13.963315, 0.5, -7.0994105)
+metadata/_edit_lock_ = true
+
+[node name="road-side-exit3" parent="Map" unique_id=395647108 instance=ExtResource("16_jq2sk")]
+transform = Transform3D(-4, 0, -3.496911e-07, 0, 4, 0, 3.496911e-07, 0, -4, 10.012747, 0.49999905, 10.8848295)
+metadata/_edit_lock_ = true
+
+[node name="road-side3" parent="Map" unique_id=2067403256 instance=ExtResource("17_4k2k6")]
+transform = Transform3D(16, 0, 0, 0, 4, 0, 0, 0, 4, -3.982264, 0.50000095, -7.1046257)
+metadata/_edit_lock_ = true
+
+[node name="road-side4" parent="Map" unique_id=122775212 instance=ExtResource("17_4k2k6")]
+transform = Transform3D(-16, 0, -3.496911e-07, 0, 4, 0, 1.3987644e-06, 0, -4, 0.029664412, 0.5, 10.887113)
+metadata/_edit_lock_ = true
+
+[node name="road-side-entry3" parent="Map" unique_id=390355175 instance=ExtResource("18_0rl1p")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 6.007971, 0.5, -7.106516)
+metadata/_edit_lock_ = true
+
+[node name="road-side-entry4" parent="Map" unique_id=1811097599 instance=ExtResource("18_0rl1p")]
+transform = Transform3D(-4, 0, -3.496911e-07, 0, 4, 0, 3.496911e-07, 0, -4, -9.96942, 0.49999905, 10.888429)
+metadata/_edit_lock_ = true
+
+[node name="road-roundabout2" parent="Map" unique_id=296066023 instance=ExtResource("19_ok6jj")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -17.960508, 0.49999905, 10.887365)
+metadata/_edit_lock_ = true
+
+[node name="road-intersection3" parent="Map" unique_id=1111567994 instance=ExtResource("20_facbu")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -17.959259, 0.50000095, -7.1011105)
+metadata/_edit_lock_ = true
+
+[node name="road-end4" parent="Map" unique_id=304696038 instance=ExtResource("21_b1qrp")]
+transform = Transform3D(-12, 0, -6.039832e-07, 0, 4, 0, 1.8119497e-06, 0, -4, 17.992336, 0.5, 10.886638)
+metadata/_edit_lock_ = true
+
+[node name="road-crossing2" parent="Map" unique_id=1743116919 instance=ExtResource("25_0cp0l")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -17.963041, 0.5, 18.8757)
+metadata/_edit_lock_ = true
+
+[node name="road-bend-square3" parent="Map" unique_id=778203789 instance=ExtResource("26_d2t1y")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 10.000027, 0.49999905, -7.10534)
+metadata/_edit_lock_ = true
+
+[node name="fence-1x22" parent="Map" unique_id=965174178 instance=ExtResource("28_0n3wm")]
+transform = Transform3D(11, 0, 0, 0, 10, 0, 0, 0, 10, 0.7669114, 0.50000095, 5.9442434)
+metadata/_edit_lock_ = true
+
+[node name="tree-large2" parent="Map" unique_id=1133609662 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -22.402649, 0.5, 2.2592201)
+metadata/_edit_lock_ = true
+
+[node name="tree-large5" parent="Map" unique_id=676674170 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -20.931124, 0.5, 2.4119473)
+metadata/_edit_lock_ = true
+
+[node name="tree-large3" parent="Map" unique_id=590508870 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -21.57276, 0.5, 0.75185966)
+metadata/_edit_lock_ = true
+
+[node name="tree-large4" parent="Map" unique_id=477867361 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -21.72018, 0.5, 3.8151073)
+metadata/_edit_lock_ = true
+
+[node name="tree-large6" parent="Map" unique_id=114020364 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -22.402649, 0.5, -2.5523686)
+metadata/_edit_lock_ = true
+
+[node name="tree-large7" parent="Map" unique_id=403220381 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -20.931124, 0.5, -2.3996415)
+metadata/_edit_lock_ = true
+
+[node name="tree-large8" parent="Map" unique_id=485969472 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -21.57276, 0.5, -4.059729)
+metadata/_edit_lock_ = true
+
+[node name="tree-large9" parent="Map" unique_id=1816937737 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -21.72018, 0.5, -0.9964813)
+metadata/_edit_lock_ = true
+
+[node name="tree-large76" parent="Map" unique_id=699969477 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -23.859886, 0.5, 20.762505)
+metadata/_edit_lock_ = true
+
+[node name="tree-large77" parent="Map" unique_id=2112378164 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -22.388361, 0.5, 20.915232)
+metadata/_edit_lock_ = true
+
+[node name="tree-large78" parent="Map" unique_id=3497091 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -23.029997, 0.5, 19.255144)
+metadata/_edit_lock_ = true
+
+[node name="tree-large79" parent="Map" unique_id=36927908 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -23.177418, 0.5, 22.318392)
+metadata/_edit_lock_ = true
+
+[node name="tree-large80" parent="Map" unique_id=1057557264 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -22.388361, 0.5, 16.103643)
+metadata/_edit_lock_ = true
+
+[node name="tree-large81" parent="Map" unique_id=1518085494 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -23.029997, 0.5, 14.443556)
+metadata/_edit_lock_ = true
+
+[node name="tree-large82" parent="Map" unique_id=696759865 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -23.177418, 0.5, 17.506804)
+metadata/_edit_lock_ = true
+
+[node name="tree-large50" parent="Map" unique_id=184558722 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 16.449448, 0.5, 7.5686913)
+metadata/_edit_lock_ = true
+
+[node name="tree-large51" parent="Map" unique_id=395452895 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 17.539595, 0.5, 4.84566)
+metadata/_edit_lock_ = true
+
+[node name="tree-large52" parent="Map" unique_id=962599359 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 18.39843, 0.49999905, 5.9739547)
+metadata/_edit_lock_ = true
+
+[node name="tree-large53" parent="Map" unique_id=2066637571 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 16.750538, 0.5, 6.2488203)
+metadata/_edit_lock_ = true
+
+[node name="tree-large54" parent="Map" unique_id=1212142986 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 14.031727, 0.5, 6.11642)
+metadata/_edit_lock_ = true
+
+[node name="tree-large55" parent="Map" unique_id=242606227 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.503252, 0.5, 6.269147)
+metadata/_edit_lock_ = true
+
+[node name="tree-large58" parent="Map" unique_id=544762745 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 16.449448, 0.5, 7.5686913)
+metadata/_edit_lock_ = true
+
+[node name="tree-large59" parent="Map" unique_id=1406651484 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 18.39843, 0.49999905, 5.9739547)
+metadata/_edit_lock_ = true
+
+[node name="tree-large60" parent="Map" unique_id=440955240 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 16.750538, 0.5, 6.2488203)
+metadata/_edit_lock_ = true
+
+[node name="tree-large61" parent="Map" unique_id=706334420 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 14.031727, 0.5, 6.11642)
+metadata/_edit_lock_ = true
+
+[node name="tree-large62" parent="Map" unique_id=447650903 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.503252, 0.5, 6.269147)
+metadata/_edit_lock_ = true
+
+[node name="tree-large56" parent="Map" unique_id=1188661861 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 14.861616, 0.5, 4.6090593)
+metadata/_edit_lock_ = true
+
+[node name="tree-large57" parent="Map" unique_id=2074977041 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 14.714195, 0.5, 7.672307)
+metadata/_edit_lock_ = true
+
+[node name="tree-large63" parent="Map" unique_id=2534503 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.396572, 0.5, 7.5686913)
+metadata/_edit_lock_ = true
+
+[node name="tree-large64" parent="Map" unique_id=488698129 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 23.48672, 0.5, 4.84566)
+metadata/_edit_lock_ = true
+
+[node name="tree-large65" parent="Map" unique_id=996395543 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 24.345554, 0.49999905, 5.9739547)
+metadata/_edit_lock_ = true
+
+[node name="tree-large66" parent="Map" unique_id=752229338 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.697662, 0.5, 6.2488203)
+metadata/_edit_lock_ = true
+
+[node name="tree-large67" parent="Map" unique_id=1117135012 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 19.978851, 0.5, 6.11642)
+metadata/_edit_lock_ = true
+
+[node name="tree-large68" parent="Map" unique_id=1666470155 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 21.450377, 0.5, 6.269147)
+metadata/_edit_lock_ = true
+
+[node name="tree-large69" parent="Map" unique_id=187761992 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.396572, 0.5, 7.5686913)
+metadata/_edit_lock_ = true
+
+[node name="tree-large70" parent="Map" unique_id=644111557 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 24.345554, 0.49999905, 5.9739547)
+metadata/_edit_lock_ = true
+
+[node name="tree-large71" parent="Map" unique_id=551541030 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.697662, 0.5, 6.2488203)
+metadata/_edit_lock_ = true
+
+[node name="tree-large72" parent="Map" unique_id=246833152 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 19.978851, 0.5, 6.11642)
+metadata/_edit_lock_ = true
+
+[node name="tree-large73" parent="Map" unique_id=96509615 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 21.450377, 0.5, 6.269147)
+metadata/_edit_lock_ = true
+
+[node name="tree-large74" parent="Map" unique_id=1534400169 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 20.80874, 0.5, 4.6090593)
+metadata/_edit_lock_ = true
+
+[node name="tree-large75" parent="Map" unique_id=239070640 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 20.66132, 0.5, 7.672307)
+metadata/_edit_lock_ = true
+
+[node name="tree-large10" parent="Map" unique_id=1772312692 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 12.242319, 0.4999981, -11.011284)
+metadata/_edit_lock_ = true
+
+[node name="tree-large11" parent="Map" unique_id=618482486 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 13.713844, 0.4999981, -10.858557)
+metadata/_edit_lock_ = true
+
+[node name="tree-large12" parent="Map" unique_id=1052884357 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 13.072208, 0.4999981, -12.518644)
+metadata/_edit_lock_ = true
+
+[node name="tree-large13" parent="Map" unique_id=537085762 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 12.9247875, 0.4999981, -9.455397)
+metadata/_edit_lock_ = true
+
+[node name="tree-large14" parent="Map" unique_id=1808738201 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 12.242319, 0.4999981, -15.822872)
+metadata/_edit_lock_ = true
+
+[node name="tree-large15" parent="Map" unique_id=1519813110 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 13.713844, 0.4999981, -15.670145)
+metadata/_edit_lock_ = true
+
+[node name="tree-large16" parent="Map" unique_id=1153510140 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 13.072208, 0.4999981, -17.330233)
+metadata/_edit_lock_ = true
+
+[node name="tree-large17" parent="Map" unique_id=2035052523 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 12.9247875, 0.4999981, -14.266985)
+metadata/_edit_lock_ = true
+
+[node name="tree-large18" parent="Map" unique_id=1215111258 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 14.457997, 0.49999905, -10.548197)
+metadata/_edit_lock_ = true
+
+[node name="tree-large19" parent="Map" unique_id=2096508352 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.9295225, 0.49999905, -10.39547)
+metadata/_edit_lock_ = true
+
+[node name="tree-large20" parent="Map" unique_id=1751824501 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.287887, 0.49999905, -12.055557)
+metadata/_edit_lock_ = true
+
+[node name="tree-large21" parent="Map" unique_id=438806235 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.140466, 0.49999905, -8.99231)
+metadata/_edit_lock_ = true
+
+[node name="tree-large22" parent="Map" unique_id=600867406 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 14.457997, 0.49999905, -15.359785)
+metadata/_edit_lock_ = true
+
+[node name="tree-large23" parent="Map" unique_id=2124364867 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.9295225, 0.49999905, -15.207058)
+metadata/_edit_lock_ = true
+
+[node name="tree-large24" parent="Map" unique_id=98696222 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.287887, 0.49999905, -16.867146)
+metadata/_edit_lock_ = true
+
+[node name="tree-large25" parent="Map" unique_id=70617076 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 15.140466, 0.49999905, -13.803898)
+metadata/_edit_lock_ = true
+
+[node name="tree-large26" parent="Map" unique_id=1338146063 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 16.992817, 0.5, -10.178112)
+metadata/_edit_lock_ = true
+
+[node name="tree-large27" parent="Map" unique_id=1705669920 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 18.464344, 0.5, -10.025385)
+metadata/_edit_lock_ = true
+
+[node name="tree-large28" parent="Map" unique_id=1160170115 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 17.822708, 0.5, -11.6854725)
+metadata/_edit_lock_ = true
+
+[node name="tree-large29" parent="Map" unique_id=2026268257 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 17.675285, 0.5, -8.622225)
+metadata/_edit_lock_ = true
+
+[node name="tree-large30" parent="Map" unique_id=2033779147 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 16.992817, 0.5, -14.9897)
+metadata/_edit_lock_ = true
+
+[node name="tree-large31" parent="Map" unique_id=1359784145 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 18.464344, 0.5, -14.836973)
+metadata/_edit_lock_ = true
+
+[node name="tree-large32" parent="Map" unique_id=1359495081 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 17.822708, 0.5, -16.49706)
+metadata/_edit_lock_ = true
+
+[node name="tree-large33" parent="Map" unique_id=694309325 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 17.675285, 0.5, -13.433813)
+metadata/_edit_lock_ = true
+
+[node name="tree-large34" parent="Map" unique_id=1426307723 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 19.70305, 0.5, -11.99879)
+metadata/_edit_lock_ = true
+
+[node name="tree-large35" parent="Map" unique_id=1028177747 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 21.174578, 0.5, -11.846063)
+metadata/_edit_lock_ = true
+
+[node name="tree-large36" parent="Map" unique_id=544713378 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 20.532942, 0.5, -13.50615)
+metadata/_edit_lock_ = true
+
+[node name="tree-large37" parent="Map" unique_id=703618702 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 20.385519, 0.5, -10.442903)
+metadata/_edit_lock_ = true
+
+[node name="tree-large38" parent="Map" unique_id=1851023649 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 19.70305, 0.5, -16.810379)
+metadata/_edit_lock_ = true
+
+[node name="tree-large39" parent="Map" unique_id=995367891 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 21.174578, 0.5, -16.65765)
+metadata/_edit_lock_ = true
+
+[node name="tree-large40" parent="Map" unique_id=284282426 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 20.532942, 0.5, -18.317738)
+metadata/_edit_lock_ = true
+
+[node name="tree-large41" parent="Map" unique_id=1596995627 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 20.385519, 0.5, -15.254491)
+metadata/_edit_lock_ = true
+
+[node name="tree-large42" parent="Map" unique_id=1343077339 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.305246, 0.5, -10.3870125)
+metadata/_edit_lock_ = true
+
+[node name="tree-large43" parent="Map" unique_id=1993943297 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 23.776773, 0.5, -10.234285)
+metadata/_edit_lock_ = true
+
+[node name="tree-large44" parent="Map" unique_id=683907005 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 23.135138, 0.5, -11.894373)
+metadata/_edit_lock_ = true
+
+[node name="tree-large45" parent="Map" unique_id=1026077714 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.987715, 0.5, -8.831125)
+metadata/_edit_lock_ = true
+
+[node name="tree-large46" parent="Map" unique_id=1983861073 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.305246, 0.5, -15.198602)
+metadata/_edit_lock_ = true
+
+[node name="tree-large47" parent="Map" unique_id=1864605345 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 23.776773, 0.5, -15.045873)
+metadata/_edit_lock_ = true
+
+[node name="tree-large48" parent="Map" unique_id=102279177 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 23.135138, 0.5, -16.70596)
+metadata/_edit_lock_ = true
+
+[node name="tree-large49" parent="Map" unique_id=95458899 instance=ExtResource("29_qnost")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 22.987715, 0.5, -13.642714)
+metadata/_edit_lock_ = true
+
+[node name="planter2" parent="Map" unique_id=1503725733 instance=ExtResource("30_wnkbs")]
+transform = Transform3D(-3.496911e-07, 0, 8, 0, 8, 0, -8, 0, -3.496911e-07, -14.426854, 0.4999981, 17.259369)
+metadata/_edit_lock_ = true
+
+[node name="planter3" parent="Map" unique_id=244473129 instance=ExtResource("30_wnkbs")]
+transform = Transform3D(-3.496911e-07, 0, 8, 0, 8, 0, -8, 0, -3.496911e-07, -14.452657, 0.4999981, 20.839888)
+metadata/_edit_lock_ = true
+
+[node name="building-type-s2" parent="Map" unique_id=847353592 instance=ExtResource("31_f6a44")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 5.0676622, 0.5, 18.631023)
+metadata/_edit_lock_ = true
+
+[node name="cone9" parent="Map" unique_id=2109586873 instance=ExtResource("32_jq2sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.64277, 0.5000005, 12.1989155)
+metadata/_edit_lock_ = true
+
+[node name="cone10" parent="Map" unique_id=2129380389 instance=ExtResource("32_jq2sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.64277, 0.5000005, 11.672522)
+metadata/_edit_lock_ = true
+
+[node name="cone11" parent="Map" unique_id=1460436248 instance=ExtResource("32_jq2sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.64277, 0.5000005, 11.139108)
+metadata/_edit_lock_ = true
+
+[node name="cone12" parent="Map" unique_id=1779707172 instance=ExtResource("32_jq2sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.64277, 0.5000005, 10.583034)
+metadata/_edit_lock_ = true
+
+[node name="cone13" parent="Map" unique_id=703030071 instance=ExtResource("32_jq2sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.64277, 0.5000005, 10.060324)
+metadata/_edit_lock_ = true
+
+[node name="cone14" parent="Map" unique_id=625589795 instance=ExtResource("32_jq2sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.64277, 0.5000005, 9.539927)
+metadata/_edit_lock_ = true
+
+[node name="cone15" parent="Map" unique_id=1879370294 instance=ExtResource("32_jq2sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.64277, 0.5000005, 9.527875)
+metadata/_edit_lock_ = true
+
+[node name="tractor" parent="Map" unique_id=1529455233 instance=ExtResource("33_4k2k6")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -20.95684, 0.50000006, 20.200418)
+metadata/_edit_lock_ = true
+
+[node name="box2" parent="Map" unique_id=72104281 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.1811347, 0.5, 6.84386)
+metadata/_edit_lock_ = true
+
+[node name="box3" parent="Map" unique_id=1011451100 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(0.4257793, 0, -0.90482706, 0, 1, 0, 0.90482706, 0, 0.4257793, -0.9737717, 0.5, 6.8959246)
+metadata/_edit_lock_ = true
+
+[node name="box4" parent="Map" unique_id=707311142 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(0.4257793, 0, -0.90482706, 0, 1, 0, 0.90482706, 0, 0.4257793, -2.4634545, 1.9300001, 7.063085)
+metadata/_edit_lock_ = true
+
+[node name="box5" parent="Map" unique_id=1005176091 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.235308, 0.49999976, 4.6352997)
+metadata/_edit_lock_ = true
+
+[node name="box6" parent="Map" unique_id=1208563753 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.240532, 0.5, 5.435235)
+metadata/_edit_lock_ = true
+
+[node name="box7" parent="Map" unique_id=31361470 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(0.87630665, 0, -0.4817537, 0, 1, 0, 0.4817537, 0, 0.87630665, -9.074415, 0.6021662, 13.387346)
+metadata/_edit_lock_ = true
+
+[node name="box8" parent="Map" unique_id=116090562 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(0.87630665, 0, -0.4817537, 0, 1, 0, 0.4817537, 0, 0.87630665, -4.260271, 1.2150006, 5.455003)
+metadata/_edit_lock_ = true
+
+[node name="sign-highway-wide2" parent="Map" unique_id=453316413 instance=ExtResource("25_h8e4i")]
+transform = Transform3D(-0.03490612, 0, -3.9998477, 0, 4, 0, 3.9998477, 0, -0.03490612, -17.955044, 0.50000095, 23.979666)
+metadata/_edit_lock_ = true
+
+[node name="sedan-sports" parent="Map" unique_id=439300142 instance=ExtResource("26_4lmeg")]
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, -12.185728, 0.5, -9.615421)
+metadata/_edit_lock_ = true
+
+[node name="ambulance" parent="Map" unique_id=1643206860 instance=ExtResource("27_0cp0l")]
+transform = Transform3D(0.26233387, 0, 1.3752021, 0, 1.4, 0, -1.3752021, 0, 0.26233387, 18.174974, 0.5, 11.980987)
+metadata/_edit_lock_ = true
+
+[node name="firetruck" parent="Map" unique_id=1837839871 instance=ExtResource("28_d2t1y")]
+transform = Transform3D(1.0205561, 0, -0.958366, 0, 1.4, 0, 0.958366, 0, 1.0205561, 12.804372, 0.50000095, 12.788786)
+metadata/_edit_lock_ = true
+
+[node name="police" parent="Map" unique_id=48939315 instance=ExtResource("29_gngh3")]
+transform = Transform3D(-0.43262383, 0, -1.3314791, 0, 1.4, 0, 1.3314791, 0, -0.43262383, 8.949068, 0.49999952, -10.277201)
+metadata/_edit_lock_ = true
+
+[node name="police2" parent="Map" unique_id=138721175 instance=ExtResource("29_gngh3")]
+transform = Transform3D(-0.43262392, 0, 1.3314791, 0, 1.4, 0, -1.3314791, 0, -0.43262392, 3.3288863, 0.49999905, -10.045782)
+metadata/_edit_lock_ = true
+
+[node name="taxi" parent="Map" unique_id=752956990 instance=ExtResource("30_0n3wm")]
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, -22.33038, 0.5, 5.52669)
+metadata/_edit_lock_ = true
+
+[node name="van" parent="Map" unique_id=1842920029 instance=ExtResource("31_qnost")]
+transform = Transform3D(-0.5960911, 0, -1.2667577, 0, 1.4, 0, 1.2667577, 0, -0.5960911, 17.355406, 0.5, -20.111038)
+metadata/_edit_lock_ = true
+
+[node name="delivery" parent="Map" unique_id=1075685694 instance=ExtResource("32_wnkbs")]
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, -5.623663, 0.49999952, 13.048059)
+metadata/_edit_lock_ = true
+
+[node name="suv-luxury" parent="Map" unique_id=1835173881 instance=ExtResource("33_f6a44")]
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, -6.974697, 0.50000095, -9.859736)
+metadata/_edit_lock_ = true
+
+[node name="tree-small2" parent="Map" unique_id=1838934056 instance=ExtResource("34_0cbny")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -13.161788, 0.5000005, 5.416858)
+metadata/_edit_lock_ = true
+
+[node name="tree-small3" parent="Map" unique_id=1930443842 instance=ExtResource("34_0cbny")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -14.898821, 0.5000005, 5.829193)
+metadata/_edit_lock_ = true
+
+[node name="tree-small4" parent="Map" unique_id=2099482465 instance=ExtResource("34_0cbny")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -13.237107, 0.5000005, 6.9655666)
+metadata/_edit_lock_ = true
+
+[node name="tree-small5" parent="Map" unique_id=88012285 instance=ExtResource("34_0cbny")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -11.999746, 0.5000005, 8.282467)
+metadata/_edit_lock_ = true
+
+[node name="tree-small6" parent="Map" unique_id=980478070 instance=ExtResource("34_0cbny")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -11.367709, 0.5000005, 6.4250135)
+metadata/_edit_lock_ = true
+
+[node name="delivery-flat" parent="Map" unique_id=1654407959 instance=ExtResource("35_hrvbo")]
+transform = Transform3D(-1.4, 0, 1.2239188e-07, 0, 1.4, 0, -1.2239188e-07, 0, -1.4, -7.6706357, 0.5, 6.28307)
+metadata/_edit_lock_ = true
+
+[node name="sedan" parent="Map" unique_id=1013322092 instance=ExtResource("36_uypp3")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 11.7385025, 0.50000095, 2.4459467)
+metadata/_edit_lock_ = true
+
+[node name="garbage-truck" parent="Map" unique_id=2141172339 instance=ExtResource("37_blkrb")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -18.643415, 0.5000007, 0.7725291)
+metadata/_edit_lock_ = true
+
+[node name="building-type-q2" parent="Map" unique_id=1567312052 instance=ExtResource("2_ycdy4")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -7.0268474, 0.49999905, 18.438599)
+metadata/_edit_lock_ = true
+
+[node name="construction-barrier2" parent="Map" unique_id=1314792269 instance=ExtResource("40_abqjc")]
+transform = Transform3D(4.6488824, 0, 1.8406227, 0, 5, 0, -1.8406227, 0, 4.6488824, -23.647865, 0.49999928, -7.7094707)
+metadata/_edit_lock_ = true
+
+[node name="construction-barrier3" parent="Map" unique_id=1785485113 instance=ExtResource("40_abqjc")]
+transform = Transform3D(4.6488824, 0, -1.8406227, 0, 5, 0, 1.8406227, 0, 4.6488824, -23.635815, 0.49999928, -6.3936563)
+metadata/_edit_lock_ = true
+
+[node name="planter4" parent="Map" unique_id=1673375351 instance=ExtResource("30_wnkbs")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 8.641815, 0.49999905, 7.8956137)
+metadata/_edit_lock_ = true
+
+[node name="planter5" parent="Map" unique_id=1542373487 instance=ExtResource("30_wnkbs")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 11.27393, 0.49999905, 7.906399)
+metadata/_edit_lock_ = true
+
+[node name="construction-light2" parent="Map" unique_id=508707484 instance=ExtResource("40_0cp0l")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -16.707485, 0.5, 23.569565)
+metadata/_edit_lock_ = true
+
+[node name="construction-light3" parent="Map" unique_id=1156706396 instance=ExtResource("40_0cp0l")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -17.230099, 0.5, 23.569565)
+metadata/_edit_lock_ = true
+
+[node name="construction-light4" parent="Map" unique_id=1845999380 instance=ExtResource("40_0cp0l")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -17.757572, 0.5, 23.569565)
+metadata/_edit_lock_ = true
+
+[node name="construction-light5" parent="Map" unique_id=214552075 instance=ExtResource("40_0cp0l")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -18.260891, 0.5, 23.569565)
+metadata/_edit_lock_ = true
+
+[node name="construction-light6" parent="Map" unique_id=650631043 instance=ExtResource("40_0cp0l")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -18.791513, 0.5, 23.569565)
+metadata/_edit_lock_ = true
+
+[node name="construction-light7" parent="Map" unique_id=1408703058 instance=ExtResource("40_0cp0l")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -19.27003, 0.5, 23.569565)
+metadata/_edit_lock_ = true
+
+[node name="road-end-round2" parent="Map" unique_id=344149494 instance=ExtResource("41_d2t1y")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 10.002841, 0.4999981, 4.6958523)
+metadata/_edit_lock_ = true
+
+[node name="Wall1" type="CSGBox3D" parent="Map" unique_id=250820659]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -23.5, 4.5, 0)
+use_collision = true
+size = Vector3(50, 10, 1)
+material = SubResource("StandardMaterial3D_0cp0l")
+metadata/_edit_lock_ = true
+
+[node name="Wall2" type="CSGBox3D" parent="Map" unique_id=1130732884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, -23.5)
+use_collision = true
+size = Vector3(50, 10, 1)
+material = SubResource("StandardMaterial3D_d2t1y")
+metadata/_edit_lock_ = true
+
+[node name="Wall3" type="CSGBox3D" parent="Map" unique_id=112157350]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.5, 4.5, 0)
+use_collision = true
+size = Vector3(50, 10, 1)
+material = SubResource("StandardMaterial3D_d2t1y")
+metadata/_edit_lock_ = true
+
+[node name="Wall4" type="CSGBox3D" parent="Map" unique_id=11683268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, 23.5)
+use_collision = true
+size = Vector3(50, 10, 1)
+material = SubResource("StandardMaterial3D_d2t1y")
+metadata/_edit_lock_ = true
+
+[node name="tree-small7" parent="Map" unique_id=1992940046 instance=ExtResource("34_0cbny")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -17.946577, 0.5, 10.949344)
+metadata/_edit_lock_ = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=260963897]
+transform = Transform3D(0.6998164, -0.6779468, 0.22504497, 0.34558412, 0.59704834, 0.723951, -0.6251629, -0.42886084, 0.6521118, -14.754538, 21.206852, 31.20106)
+light_color = Color(0.7731576, 0.81108195, 0.88466424, 1)
+light_energy = 0.683
+shadow_enabled = true
+
+[node name="Players" type="Node3D" parent="." unique_id=1908308057]
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="." unique_id=1643863661]
+_spawnable_scenes = PackedStringArray("uid://c4jpngf2o5cur")
+spawn_path = NodePath("../Players")
+
+[node name="PauseMenu" parent="." unique_id=1057246778 instance=ExtResource("3_h2yge")]
+
+[node name="SpawnPoints" type="Node3D" parent="." unique_id=170445725]
+
+[node name="Marker3D1" type="Marker3D" parent="SpawnPoints" unique_id=300983429]
+transform = Transform3D(1, 0, 0, 0, 0.90373915, 0.42808357, 0, -0.42808357, 0.90373915, 13.510861, 4.1823897, 21.0555)
+
+[node name="Marker3D2" type="Marker3D" parent="SpawnPoints" unique_id=731168869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4762523, 0.75, -13.596712)
+
+[node name="Marker3D8" type="Marker3D" parent="SpawnPoints" unique_id=729784131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.635744, 0.75, -1.5824451)
+
+[node name="Marker3D9" type="Marker3D" parent="SpawnPoints" unique_id=1715435858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.748139, 0.75, 7.356615)
+
+[node name="Marker3D10" type="Marker3D" parent="SpawnPoints" unique_id=1490420775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7497282, 0.75, 5.545488)
+
+[node name="Marker3D3" type="Marker3D" parent="SpawnPoints" unique_id=545172156]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.779, 0.75, 12.254)
+
+[node name="Marker3D4" type="Marker3D" parent="SpawnPoints" unique_id=7751942]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.099, 0.75, 13.602)
+
+[node name="Marker3D5" type="Marker3D" parent="SpawnPoints" unique_id=1831388722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.21, 0.75, 0)
+
+[node name="Marker3D6" type="Marker3D" parent="SpawnPoints" unique_id=2118909992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.725504, 0.75, -0.28652263)
+
+[node name="Marker3D7" type="Marker3D" parent="SpawnPoints" unique_id=1199132600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.523758, 0.7499995, -11.054475)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1445992037]
+environment = SubResource("Environment_qnost")
